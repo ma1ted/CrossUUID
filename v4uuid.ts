@@ -1,4 +1,4 @@
-export class CrossUUID {
+export class V4UUID {
   generate(): string {
     function pad(n: string, width: number): string {
       n = n + "";
