@@ -18,7 +18,7 @@ browsers such as Firefox and Safari to name two is a major issue.
 #### Import the module
 
 ```js
-import { CrossUUID } from "./crossuuid.ts";
+import { V4UUID } from "https://deno.land/x/v4uuid/v4uuid.ts"
 ```
 
 #### Generate a UUID
