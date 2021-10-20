@@ -36,7 +36,7 @@ jobs:
       - name: Set up Deno
       - uses: denoland/setup-deno@v1
         with:
-          deno-version: vx.x.x
+          deno-version: v1.15.2
       
       - name: Lint
         run: deno fmt --check
