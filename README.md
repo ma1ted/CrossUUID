@@ -1,4 +1,4 @@
-# uuid
+# unique
 
 ## A Typescript UUID v4 implementation
 
