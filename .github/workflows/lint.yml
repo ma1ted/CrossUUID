@@ -24,9 +24,9 @@ jobs:
         uses: denolib/setup-deno@v2
         with:
           deno-version: ${{ matrix.deno-version }}
-		  
+
       - name: Lint Deno Module
         run: deno fmt --check
-	 
+
       - name: Commit to repo
         run: git add . && git commit -m "Automated lint" && git push -u main
