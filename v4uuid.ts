@@ -48,7 +48,7 @@ export class V4UUID {
         const binIntHex = pad(binInt.toString(16), 2);
         hex.push(binIntHex);
     });
-
+    
     return [
       hex[0],
       hex[1],
