@@ -1,30 +1,23 @@
-# v4uuid
+# uuid
 
-## A tiny dependency-free Typescript UUID v4 implementation
+## My Typescript UUID v4 implementation
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ma1ted/v4uuid/Test)
-![GitHub top language](https://img.shields.io/github/languages/top/ma1ted/v4uuid)
-
-As per https://wicg.github.io/uuid/#dom-crypto-randomuuid
-
-### Why
-
-As per the MDN docs, `Crypto.randomUUID()` is _available only in secure contexts
-(HTTPS), in some or all supporting browsers_. This function not being in
-browsers such as Firefox and Safari to name two is a major issue.
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ma1ted/uuid/Test)
+![GitHub top language](https://img.shields.io/github/languages/top/ma1ted/uuid)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ma1ted/uuid)
 
 ### Usage
 
 #### Import the module
 
 ```js
-import { V4UUID } from "https://deno.land/x/v4uuid/v4uuid.ts"
+import { uuid as uuidv4 } from "https://deno.land/x/unique/uuid.ts"
 ```
 
 #### Generate a UUID
 
 ```js
-const uuid: string = new CrossUUID().generate();
+const uuid: string = uuidv4();
 console.log(uuid);
 ```
 
@@ -37,4 +30,9 @@ const isValid: boolean = v4.validate(uuid);
 console.log(isValid);
 ```
 
-//TODO: Add to deno/npm
+### Why
+
+As per the MDN docs, `Crypto.randomUUID()` is _available only in secure contexts
+(HTTPS), in some or all supporting browsers_.
+
+<!--https://wicg.github.io/uuid/#dom-crypto-randomuuid-->
