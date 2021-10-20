@@ -44,7 +44,7 @@ jobs:
           deno-version: ${{ matrix.deno-version }}
           
       - name: Install Node types
-        run: npm install --save-dev @types/node
+        run: npm ci
 
       - name: Test Deno Module
         run: deno test
