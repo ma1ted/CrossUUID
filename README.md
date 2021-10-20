@@ -1,4 +1,4 @@
-# CrossUUID
+# v4uuid
 ## A tiny dependency-free Typescript UUID v4 implementation
 
 As per https://wicg.github.io/uuid/#dom-crypto-randomuuid
