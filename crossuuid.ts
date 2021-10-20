@@ -8,7 +8,7 @@ export class CrossUUID {
     }
 
     // 1. Let bytes be a list with 16 elements of the type byte.
-    let bytes = new Uint8Array(16);
+    const bytes = new Uint8Array(16);
 
     // 2. Fill bytes with cryptographically secure random bytes.
     window.crypto.getRandomValues(bytes);
@@ -19,14 +19,14 @@ export class CrossUUID {
     let bytes6Binary = bytes[6].toString(2);
     bytes6Binary = pad(bytes6Binary, 8);
 
-    let versioned: string = "0100" + bytes6Binary.substring(4, 8);
+    const versioned: string = "0100" + bytes6Binary.substring(4, 8);
     bytes[6] = parseInt(versioned, 2);
 
     // 4. Set the 2 most significant bits of bytes[8], which represent the UUID variant, to 0b10.
     let bytes8Binary = bytes[8].toString(2);
     bytes8Binary = pad(bytes8Binary, 8);
 
-    let variant: string = "10" + bytes8Binary.substring(2, 8);
+    const variant: string = "10" + bytes8Binary.substring(2, 8);
     bytes[8] = parseInt(variant, 2);
 
     /* 5. Return the concatenation of «
@@ -41,7 +41,7 @@ export class CrossUUID {
             hexadecimal representation of bytes[10], hexadecimal representation of bytes[11], hexadecimal representation of bytes[12], hexadecimal representation of bytes[13], hexadecimal representation of bytes[14], hexadecimal representation of bytes[15]
         ».
         */
-    let hex: string[] = [];
+    const hex: string[] = [];
     for (const i of bytes) {
       const bin = pad(i.toString(2), 8);
       const binInt = parseInt(bin, 2);
