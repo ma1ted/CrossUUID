@@ -51,8 +51,11 @@ jobs:
     needs: Validate
 
     steps:
+      - name: Git Checkout Deno Module
+        uses: actions/checkout@v2
+        
       - name: Compile Typescript
-        run: ls -a
+        run: tsc
         
       # TODO: Add NPM publish
         
