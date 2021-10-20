@@ -1,7 +1,7 @@
 import { assert } from "https://deno.land/std@0.112.0/testing/asserts.ts";
 import { v4 } from "https://deno.land/std@0.112.0/uuid/mod.ts";
 
-import { CrossUUID } from "./crossuuid.ts";
+import { CrossUUID } from "./v4uuid.ts";
 
 Deno.test("Validate generated UUID", () => {
   let passed = true;
