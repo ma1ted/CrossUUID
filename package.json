@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/ma1ted/unique/issues"
   },
-  "homepage": "https://github.com/ma1ted/unique#readme"
+  "homepage": "https://github.com/ma1ted/unique#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.1"
+  }
 }
