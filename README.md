@@ -2,6 +2,9 @@
 
 ## A tiny dependency-free Typescript UUID v4 implementation
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ma1ted/v4uuid/Test)
+![GitHub top language](https://img.shields.io/github/languages/top/ma1ted/v4uuid)
+
 As per https://wicg.github.io/uuid/#dom-crypto-randomuuid
 
 ### Why
