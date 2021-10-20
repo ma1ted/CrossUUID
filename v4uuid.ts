@@ -42,12 +42,12 @@ export class V4UUID {
         ».
         */
     const hex: string[] = [];
-    for (const i of bytes) {
-      const bin = pad(i.toString(2), 8);
-      const binInt = parseInt(bin, 2);
-      const binIntHex = pad(binInt.toString(16), 2);
-      hex.push(binIntHex);
-    }
+    bytes.forEach((element: number) => {
+        const bin = pad(element.toString(2), 8);
+        const binInt = parseInt(bin, 2);
+        const binIntHex = pad(binInt.toString(16), 2);
+        hex.push(binIntHex);
+    });
 
     return [
       hex[0],
