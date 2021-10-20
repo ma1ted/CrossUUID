@@ -5,6 +5,7 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ma1ted/uuid/Test)
 ![GitHub top language](https://img.shields.io/github/languages/top/ma1ted/uuid)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ma1ted/uuid)
+![npm (scoped)](https://img.shields.io/npm/v/@malted/unique)
 
 ### Usage
 
