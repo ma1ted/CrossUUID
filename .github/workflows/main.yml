@@ -22,7 +22,7 @@ jobs:
           deno-version: v1.x
 
       - name: Format
-          run: deno fmt
+        run: deno fmt
 
       - name: Lint
         run: deno lint
