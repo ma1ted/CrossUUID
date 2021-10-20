@@ -33,6 +33,11 @@ jobs:
     needs: Validate
     
     steps:
+      - name: Set up Deno
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: vx.x.x
+      
       - name: Lint
         run: deno fmt --check
       
