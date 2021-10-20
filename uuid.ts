@@ -12,7 +12,7 @@ export function uuid(): string {
   // 2. Fill bytes with cryptographically secure random bytes.
   try {
       window.crypto.getRandomValues(bytes);
-  } catch (ReferenceError) {
+  } catch (_ReferenceError) {
       const crypto = require('crypto').webcrypto;
       crypto.getRandomValues(bytes);
   }
