@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/ma1ted/unique.git"
   },
+  "publishConfig": {
+    "name": "@malted/unique"
+  },
   "keywords": [
     "uuid",
     "v4uuid",
