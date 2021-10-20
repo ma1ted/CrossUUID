@@ -10,12 +10,7 @@ export function uuid(): string {
   const bytes = new Uint8Array(16);
 
   // 2. Fill bytes with cryptographically secure random bytes.
-  try {
-      window.crypto.getRandomValues(bytes);
-  } catch (_ReferenceError) {
-      const crypto = require('crypto').webcrypto;
-      crypto.getRandomValues(bytes);
-  }
+  window.crypto.getRandomValues(bytes);
 
   // 3. Set the 4 most significant bits of bytes[6], which represent the UUID version, to 0b0100.
   // (0100 -> 4 because it's a v4 uuid)
