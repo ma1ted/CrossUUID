@@ -16,12 +16,8 @@
 import { uuid as uuidv4 } from "https://deno.land/x/unique/uuid.ts"
 ```
 ##### Node
-```sh
-npm install @malted/unique
-```
-```js
-const uuid4 = require('@malted/unique');
-```
+See the [node branch](https://github.com/ma1ted/unique/tree/node) for the node-compatible version of this package
+
 
 #### Generate a UUID
 
