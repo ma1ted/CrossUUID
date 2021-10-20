@@ -46,3 +46,13 @@ jobs:
       - name: Test Deno Module
         run: deno test
         
+  Build:
+    runs-on: ubuntu-latest
+    needs: Validate
+
+    steps:
+      - name: Compile Typescript
+        run: tsc
+
+      - name: Publish to NPM
+        run: npm publish
