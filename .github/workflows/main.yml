@@ -52,7 +52,7 @@ jobs:
 
     steps:
       - name: Compile Typescript
-        run: tsc
-
-      - name: Publish to NPM
-        run: npm publish
+        run: ls -a
+        
+      # TODO: Add NPM publish
+        
