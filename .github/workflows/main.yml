@@ -39,7 +39,7 @@ jobs:
           deno-version: v1.x
       
       - name: Lint
-        run: deno fmt --check crossuuid.ts
+        run: deno fmt
       
       - name: Configure git
         run: |
