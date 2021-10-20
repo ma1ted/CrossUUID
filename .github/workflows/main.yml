@@ -39,7 +39,7 @@ jobs:
           deno-version: v1.x
       
       - name: Lint
-        run: pwd && deno fmt
+        run: pwd && ls -a && deno fmt
       
       - name: Configure git
         run: |
